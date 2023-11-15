@@ -1,8 +1,8 @@
 <?php
-require_once "db.php";
-$db = new DB();
-$db->update($_POST);
-
+use App\Utils\Database;
+require_once __DIR__ ."/vendor/autoload.php";
+$db = new Database();
+$db->update($_POST);   
 
    
 
